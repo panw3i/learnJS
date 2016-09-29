@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css">
+			#btn1{
+				width:200px;
+				height: 200px;
+				background: red;
+								
+			}
+			
+			#btn2{
+				width:200px;
+				height: 200px;
+				background: blue;
+								
+			}
+			
+		</style>
+		
+		<script type="text/javascript">
+			function change_color_red(){
+				document.getElementsByTagName("html")[0].style.background="red";
+			}
+			
+			function change_color_blue(){
+				document.getElementsByTagName("html")[0].style.background="blue";
+			}
+		</script>
+		
+		<!--html、link等标签都 可以加上ID等属性用来识别-->
+	</head>
+	<body>
+	 	<input type="button" id="btn1" value="按键一" onclick="change_color_red()"/>
+	 	<input type="button" id='btn2' value="按键二" onclick="change_color_blue()"/>
+	 	
+</html>
