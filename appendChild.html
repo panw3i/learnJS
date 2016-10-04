@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="div1">
+			<p id="p1">第一段</p>
+			<p id="p2">第二段</p>
+		</div>
+		
+		<!--添加节点，先要创建节点，然后再将节点绑定添加在已存在的节点上-->
+		<script type="text/javascript">
+//			var param = document.getElementById("div1");
+//			var node = document.createTextNode("这是新添加的第三段文本的内容");
+//			param.appendChild(node);
+		
+		
+		<!--删除节点-->
+		
+		var ele = document.getElementById('div1');
+		var child = document.getElementById('p2');
+		ele.removeChild(child);
+		
+		</script>
+	</body>
+</html>
