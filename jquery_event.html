@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery.js"></script>
+		<style type="text/css">
+			#box{
+				width: 200px;
+				height: 200px;
+				background: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">1111</div>
+		<p>this is  a  p </p>
+		<script type="text/javascript">
+//			书写错误之前
+//			$(#box).bind(onclick,change_color_blue);
+//          正确书写
+			
+			$(document).ready(function(){
+					$("#box").bind("click",change_color_blue);
+				}
+			);
+			
+			function change_color_blue(event){
+//				$("box").style.backgroundColor="orange";
+				$("p").css({ color: "#ff0011", background: 'blue' });
+				console.log(event);
+			}
+		</script>
+	</body>
+</html>
