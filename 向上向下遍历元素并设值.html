@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index2.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			#div1,#div2,p,a{
+				border: 2px solid red;
+			}
+			
+			#div1{
+				width: 500px;
+				height: 500px;
+			}
+			
+			#div2{
+				width:200px;
+				height: 200px;
+				margin-top: 20px;
+			}
+			p{
+				width:100px;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			<div id="div2">
+				<p><a href="#">123</a></p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+//				$("#div1").children().css(
+//					{
+//						border:"2px solid blue",
+//					}
+//				)
+//
+//$("#div1").find("p").css(
+//					{
+//						border:"2px solid blue",
+//					}
+//				)
+
+//  从a 到div1 但是不包含起点在内的区间元素
+
+	$("a").parentsUntil("#div1").css(
+					{
+						border:"2px solid blue",
+					}
+				)
+			});
+		</script>
+	</body>
+</html>
